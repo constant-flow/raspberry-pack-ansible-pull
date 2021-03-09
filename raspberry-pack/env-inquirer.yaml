@@ -1,0 +1,15 @@
+environmentVars:
+  - type: input
+    name: ANSIBLE_PULL_REPOSITORY
+    message: Whats the git-url of the playbook that will be pulled?
+    default: https://github.com/constant-flow/ansible-playbook-sample
+
+  - type: input
+    name: ANSIBLE_PULL_PLAYBOOK_PATH
+    message: Where to find the Playbook file you want to use?
+    default: playbook.yaml
+
+  - type: input
+    name: ANSIBLE_PULL_CRON
+    message: Specify the cron schedule, at which the playbook will be updated? (min hour day_of_month month weekday)
+    default: 0 3 * * *
